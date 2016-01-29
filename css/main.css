@@ -10,11 +10,11 @@ a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,d
     vertical-align: baseline;
 }
 
-body {
+/*body {
     line-height: 1;
     color: #000;
     background: #fff;
-}
+}*/
 
 ol,ul {
     list-style: none;
@@ -66,11 +66,17 @@ button,input,select {
 }
 
 body {
+    line-height: 1;
+    color: #000;
+    background: #fff;
+}
+
+body {
     /*background: #171f26;*/
     background: #2D63CC; /* here: navbar color */
     background: #f5f5f5;
     font-size: 15px;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: "PT Serif", Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #444;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -118,7 +124,8 @@ body {
 
 #header {
     position: relative;
-    padding: 10px 0;
+    padding: 5px 0;
+    padding-left: 30px;
 }
 
 @media print {
@@ -197,6 +204,7 @@ body {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     display: inline-block;
     padding: 0 15px;
+    font-size: 0.97em;
 }
 
 @media screen and (min-width:769px) {
@@ -215,6 +223,7 @@ body {
     font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
     display: inline-block;
     padding: 0 15px;
+     font-size: 0.97em;
 }
 
 .main-nav-link:hover {
@@ -488,11 +497,13 @@ body {
 }
 
 #sidebar {
-    width: 220px;
+/*    width: 190px;*/
+    width: 130px;
     float: left;
     padding-bottom: 40px;
    /* opacity: .8;*/
-    margin-left: -220px;
+/*    margin-left: -200px;*/
+    margin-left: -185px;
     display: none;
 }
 
@@ -516,6 +527,7 @@ body {
 /*    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;*/
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     line-height: 1;
+    font-size: 0.93em;
 }
 
 .sidebar-link,.toc-link {
@@ -529,7 +541,7 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 16px;
+    font-size: 0.93em;
 
 }
 
@@ -607,7 +619,7 @@ body {
     display: none;
     float: right;
     width: 220px;
-    margin-right: -220px;
+    margin-right: -250px;
     /*opacity: .8;*/
 }
 
@@ -638,7 +650,7 @@ body {
 
 .toc-child {
     padding-left: 1em;
-    font-size: .9em;
+    /*font-size: .9em;*/
 }
 
 #article-toc-top {
@@ -671,6 +683,7 @@ body {
 .article-title {
     float: left;
     font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+
     font-size: 39px;
     font-weight: 400;
     text-decoration: none;
@@ -755,8 +768,9 @@ a.article-title:hover {
 
 .article-content h1,.article-content h2,.article-content h3,.article-content h4,.article-content h5,.article-content h6 {
     line-height: 1em;
-    font-weight: 700;
+    font-weight: 400;
     margin: 1em 0;
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 .article-content h1 {
@@ -1417,6 +1431,7 @@ a.article-title:hover {
     position: relative;
     background: #f5f5f5;  /*here navbar footer*/
     text-align: center;
+    font-size: 0.94em;
 }
 
 #footer:after,#footer:before {
